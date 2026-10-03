@@ -1,0 +1,27 @@
+[project]
+name = "threadlite_datalab"
+version = "0.1.0"
+description = "光明线头的数据实验室"
+readme = "README.md"
+authors = [
+    { name = "Gao Bingxu", email = "bingxug@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.5",
+    "jupyterlab>=4.6.3",
+    "jupytext>=1.19.5",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pingouin>=0.6.1",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.15.0",
+]
+
+[tool.uv]
+# 本仓库不是可发布的 Python 包，只是 Notebook/脚本集合，因此不构建项目本身。
+# This repo is not a distributable Python package (notebooks/scripts only), so the project itself is not built.
+package = false
